@@ -1,0 +1,8 @@
+execution:
+- executor: selenium
+  iterations: 5
+  scenario: simple
+
+scenarios:
+  simple:
+    script: /home/marcus/TC6-demolab/testaaminen/automaatiohuuhaa/testiskripti.py

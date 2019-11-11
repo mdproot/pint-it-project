@@ -1,0 +1,19 @@
+Ke 24.4.2019
+
+Postauksen ulkoasun sekä logiikan testaaminen
+
+
+- Pystyn tykkäämään sekä kommentoimaan mitä tahansa postausta sekä tykkäämään postauksien kommenteista
+- Käyttäjä näkee sovellukseen kirjautuessaan viisi viimeisintä postausta
+- Postauksia voi filtteröidä kavereiden tai kaikkien käyttäjien välillä
+- Lisää postauksia tulee näkyviin viisi kerrallaan aina, kun näkymällä siirrytään alaspäin
+- Liian pitkien postauksien ylimenevät merkit piilotetaan automaattisesti ja voin avata ne suurempaan näkymään halutessani
+- Painamalla minkä tahansa postauksen kirjoittajan/kommentoijan nimeä, pääsen hänen profiilisivullensa.
+
+|| PASS || Testattu viidellä eri postauksella. Painikkeen painaminen uudestaan poistaa tykkäyksen.
+|| PASS || Sovellus tulostaa viisi postausta. Alas rullatessa sovellus päivittää seuraavat viisi. Testattu myös aikajärjestyksen toimivuus.
+|| PASS || Postausten filtteröinti toimii sekä kavereiden ja kaikkien käyttäjien välillä. Filtteröinti toimii sekä suosituimmuuden että ajan mukaan.
+|| PASS || Ylimenevät merkit piiloutuvat asianmukaisesti. Postauslomake ei myöskään anna syöttää enempää, kuin tuhatta merkkiä.
+|| PASS || Testattu kymmenellä eri profiililla erikseen eri ohjelmaversioilla ja eri tilanteissa sekä modaaleissa.
+
+#mdp

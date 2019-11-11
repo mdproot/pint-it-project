@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190401 12:26:22.308" generator="Robot 3.1.1 (Python 2.7.9 on linux2)">
+<suite source="/home/marcus/TC6-demolab/testaaminen/Automaatioskriptit/Skriptit/formFill-WIP.robot" id="s1" name="formFill-WIP">
+<kw type="setup" name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>udid=${deviceId}</arg>
+<arg>app=${appBinary}</arg>
+<arg>automationName=uiautomator2</arg>
+</arguments>
+<status status="PASS" endtime="20190401 12:26:33.953" starttime="20190401 12:26:22.398"></status>
+</kw>
+<test id="s1-t1" name="Avaa Sovellus Ja Navigoi Postaussivulle">
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@index='2' and @bounds='[576,2217][864,2385]']</arg>
+</arguments>
+<msg timestamp="20190401 12:26:34.701" level="INFO">Current page contains element 'xpath=//android.widget.Button[@index='2' and @bounds='[576,2217][864,2385]']'.</msg>
+<status status="PASS" endtime="20190401 12:26:34.701" starttime="20190401 12:26:33.957"></status>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<doc>Tap element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@index='2' and @bounds='[576,2217][864,2385]']</arg>
+</arguments>
+<status status="PASS" endtime="20190401 12:26:34.770" starttime="20190401 12:26:34.702"></status>
+</kw>
+<status status="PASS" endtime="20190401 12:26:34.771" critical="yes" starttime="20190401 12:26:33.954"></status>
+</test>
+<test id="s1-t2" name="Siirry Postauksen Lisatietosivulle">
+<kw name="Swipe Left">
+<kw name="Get Element Size" library="AppiumLibrary">
+<doc>Get element size</doc>
+<arguments>
+<arg>xpath=//android.view.View[@index='1']</arg>
+</arguments>
+<assign>
+<var>${element_size}</var>
+</assign>
+<msg timestamp="20190401 12:26:37.686" level="INFO">Element 'xpath=//android.view.View[@index='1']' size: {'width': 1440, 'height': 1978} </msg>
+<msg timestamp="20190401 12:26:37.687" level="INFO">${element_size} = {'width': 1440, 'height': 1978}</msg>
+<status status="PASS" endtime="20190401 12:26:37.687" starttime="20190401 12:26:34.773"></status>
+</kw>
+<kw name="Get Element Location" library="AppiumLibrary">
+<doc>Get element location</doc>
+<arguments>
+<arg>xpath=//android.view.View[@index='1']</arg>
+</arguments>
+<assign>
+<var>${element_location}</var>
+</assign>
+<msg timestamp="20190401 12:26:37.762" level="INFO">Element 'xpath=//android.view.View[@index='1']' location: {'y': 239.0, 'x': 0.0} </msg>
+<msg timestamp="20190401 12:26:37.762" level="INFO">${element_location} = {'y': 239.0, 'x': 0.0}</msg>
+<status status="PASS" endtime="20190401 12:26:37.762" starttime="20190401 12:26:37.687"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${element_location['x']} + (${element_size['width']} * 0.9)</arg>
+</arguments>
+<assign>
+<var>${start_x}</var>
+</assign>
+<msg timestamp="20190401 12:26:37.763" level="INFO">${start_x} = 1296.0</msg>
+<status status="PASS" endtime="20190401 12:26:37.763" starttime="20190401 12:26:37.763"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${element_location['y']} + (${element_size['height']} * 0.5)</arg>
+</arguments>
+<assign>
+<var>${start_y}</var>
+</assign>
+<msg timestamp="20190401 12:26:37.764" level="INFO">${start_y} = 1228.0</msg>
+<status status="PASS" endtime="20190401 12:26:37.764" starttime="20190401 12:26:37.763"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${element_location['x']} + (${element_size['width']} * 0.2)</arg>
+</arguments>
+<assign>
+<var>${end_x}</var>
+</assign>
+<msg timestamp="20190401 12:26:37.765" level="INFO">${end_x} = 288.0</msg>
+<status status="PASS" endtime="20190401 12:26:37.765" starttime="20190401 12:26:37.764"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${element_location['y']} + (${element_size['height']} * 0.5)</arg>
+</arguments>
+<assign>
+<var>${end_y}</var>
+</assign>
+<msg timestamp="20190401 12:26:37.765" level="INFO">${end_y} = 1228.0</msg>
+<status status="PASS" endtime="20190401 12:26:37.765" starttime="20190401 12:26:37.765"></status>
+</kw>
+<kw name="Swipe" library="AppiumLibrary">
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<arguments>
+<arg>${start_x}</arg>
+<arg>${start_y}</arg>
+<arg>${end_x}</arg>
+<arg>${end_y}</arg>
+<arg>500</arg>
+</arguments>
+<status status="PASS" endtime="20190401 12:26:39.143" starttime="20190401 12:26:37.765"></status>
+</kw>
+<status status="PASS" endtime="20190401 12:26:39.144" starttime="20190401 12:26:34.772"></status>
+</kw>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>xpath=//android.view.View[@index='1']</arg>
+</arguments>
+<msg timestamp="20190401 12:26:39.508" level="INFO">Current page contains element 'xpath=//android.view.View[@index='1']'.</msg>
+<status status="PASS" endtime="20190401 12:26:39.508" starttime="20190401 12:26:39.144"></status>
+</kw>
+<status status="PASS" endtime="20190401 12:26:39.508" critical="yes" starttime="20190401 12:26:34.771"></status>
+</test>
+<test id="s1-t3" name="Lisaa Oluen Nimi Seka Oluen Tyyppi">
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@index='1' and @bounds='[81,661][1359,799]']</arg>
+<arg>Koff</arg>
+</arguments>
+<msg timestamp="20190401 12:26:39.511" level="INFO">Typing text 'Koff' into text field 'xpath=//android.widget.EditText[@index='1' and @bounds='[81,661][1359,799]']'</msg>
+<status status="PASS" endtime="20190401 12:26:40.102" starttime="20190401 12:26:39.509"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@index='1' and @bounds='[81,1092][1359,1230]']</arg>
+<arg>Lager</arg>
+</arguments>
+<msg timestamp="20190401 12:26:40.104" level="INFO">Typing text 'Lager' into text field 'xpath=//android.widget.EditText[@index='1' and @bounds='[81,1092][1359,1230]']'</msg>
+<status status="PASS" endtime="20190401 12:26:41.172" starttime="20190401 12:26:40.102"></status>
+</kw>
+<status status="PASS" endtime="20190401 12:26:41.172" critical="yes" starttime="20190401 12:26:39.509"></status>
+</test>
+<test id="s1-t4" name="Palaa Takaisin Postaussivulle Ja Laheta Postaussivulle">
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@bounds='[35,2014][720,2182]']</arg>
+</arguments>
+<msg timestamp="20190401 12:26:41.267" level="INFO">Current page contains element 'xpath=//android.widget.Button[@bounds='[35,2014][720,2182]']'.</msg>
+<status status="PASS" endtime="20190401 12:26:41.267" starttime="20190401 12:26:41.174"></status>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<doc>Tap element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@bounds='[35,2014][720,2182]']</arg>
+</arguments>
+<status status="PASS" endtime="20190401 12:26:41.740" starttime="20190401 12:26:41.269"></status>
+</kw>
+<status status="PASS" endtime="20190401 12:26:41.741" critical="yes" starttime="20190401 12:26:41.173"></status>
+</test>
+<kw type="teardown" name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" endtime="20190401 12:26:42.511" starttime="20190401 12:26:41.742"></status>
+</kw>
+<status status="PASS" endtime="20190401 12:26:42.512" starttime="20190401 12:26:22.310"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="4">Critical Tests</stat>
+<stat fail="0" pass="4">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="formFill-WIP" pass="4">formFill-WIP</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

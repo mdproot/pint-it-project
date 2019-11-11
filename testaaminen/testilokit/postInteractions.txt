@@ -1,0 +1,5 @@
+Ke 24.04.2019
+
+Postauksen vuorovaikutukset
+
+Selatessani postauksia voin avata lisää kommentteja kommentointia kuvaavan painikkeen avulla. Minulle avautuu uusi modaali/näkymä, josta voin selata kommentteja kelaamalla näkymää alaspäin. Samaisesta näkymästä voin kirjoittaa uuden kommentin postaukseen. Voin tykätä kommenteista ja muut voivat minun kommenteista.

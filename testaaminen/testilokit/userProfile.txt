@@ -1,0 +1,20 @@
+Ti 02.04.2019
+
+ Frontend ohjelmakoodi ja raja-arvot
+- Käyttäjän bio
+- Minimipituus 0 || PASS ||
+- Maksimipituus 500 || PASS ||
+
+Tarkastettu tietokannan taulusta describe-komennolla bion raja-arvot. Maksimi on 500. Täten arvoa ei voi ylittää.
+
+Visuaalinen
+Käyttäjäprofiilisivun avatessa näkyy käyttäjän perustiedot, bio ja kuva
+
+Tarkastettu emulaattorin kautta. Perustietojen, kuvan, ja bion tulostus toimii kuten pitää. Kommunikointi backendin kanssa OK
+ 
+Tekemäni arvostelut löytyvät profiilini alta ja profiilivalikkoon navigointi onnistuu alavalikosta. || PASS ||
+Voin selata tekemiäni arvosteluja || PASS ||
+Voin tarkastella seuraajien ja seurattujen lukumäärää. || PASS ||
+Voin vaihtaa profiilikuvaani || FAIL ||
+
+#mdp

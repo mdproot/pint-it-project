@@ -1,0 +1,15 @@
+Ti 23.04.2019
+
+Rekisteröitymisen testaus
+ 
+- Erikoismerkkien ei tule toimia
+- Käyttäjänimen maksimipituus on 30 merkkiä
+- Salasanan maksimipituus on 50 merkkiä
+
+ 
+|| PASS || Kirjautuminen erikoismerkeillä ei onnistu. Kokeiltu aksenttikirjaimet, skandinaaviset, futhark, hiragana, katakana, kanji, sankskrit, kyrilliset ja arabia
+|| PASS || Käyttäjänimeä annettaessa 30 merkin rajan saavuttua ohjelma ei anna syöttää enempää merkkejä
+|| PASS || Salasanaa annettaessa 50 merkin rajan saavuttua ohjelma ei anna syöttää enempää merkkejä
+|| PASS || "Kirjoita salasana uudestaan"-kentän saavutettua 50 merkin rajan saavuttua ohjelma ei anna syöttää enempää merkkejä
+
+#mdp

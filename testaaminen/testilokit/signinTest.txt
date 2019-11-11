@@ -1,0 +1,24 @@
+10.05.2019
+
+Sovellukseen kirjautuminen; Normaali
+
+Hyv‰ksymiskriteeri
+Voin kirjautua sovellukseen ilman sosiaalista k‰ytt‰j‰‰, kun minulla on k‰ytt‰j‰tunnus.
+
+- Ei erikoismerkkej‰
+- K‰ytt‰j‰nimen maksimipituus 30 merkki‰
+- Salasanan maksimipituut 50 merkki‰
+- Ilman k‰ytt‰j‰nime‰ tai salasanaa ei voi kirjatua
+- Voin valita kirjautumistavaksi normaalin kirjautumisen
+
+|| PASS || Kirjautuminen erikoismerkeill‰ ei onnistu. Kokeiltu aksenttikirjaimet, skandinaaviset, futhark, hiragana, katakana, kanji, sankskrit, kyrilliset ja arabia.
+|| PASS || Ohjelma ei anna kirjoittaa yli 30 merkki‰ k‰ytt‰j‰nimi kentt‰‰n.
+|| PASS || Ohjelma ei anna kirjoittaa yli 50 merkki‰ salasana kentt‰‰n.
+|| PASS || Ohjelma ei anna kirjatua sis‰‰n ilman k‰ytt‰j‰tunnusta ja salasanaa.
+|| PASS || Ohjelma ei anna kirjatua sis‰‰n ilman k‰ytt‰j‰tunnusta.
+|| PASS || Ohjelma ei anna kirjatua sis‰‰n ilman salasanaa.
+|| PASS || Voin kirjautua k‰ytt‰j‰tunnuksella ja salasanalla, eik‰ minun tarvitse k‰ytt‰‰ sosiaalista kirjautumista
+|| PASS || Ohjelma ei anna kirjatua sis‰‰n v‰‰r‰ll‰ k‰ytt‰j‰nimell‰ jota ei ole tietokannassa.
+|| PASS || Ohjelma ei anna kirjatua sis‰‰n v‰‰r‰ll‰ salasanalla jota ei ole tietokannassa.
+
+Tarkastaja: Antony

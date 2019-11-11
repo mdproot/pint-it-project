@@ -1,0 +1,18 @@
+Ti 23.04.2019
+
+Asetusvalikon testaus
+ 
+- Asetusvalikko avautuu nappia painamalla
+- Salasanan vaihto
+- Profiilin muokkaus
+- Ilmoitusasetukset
+
+ 
+|| PASS || Asetusvalikon saa auki painamalla napista.
+|| PASS || Salasanan vaihto onnistuu
+|| PASS || Profiilin muokkaus onnistuu. Käyttäjänä voin vaihtaa profiilikuvani joko ottamalla kuvan kameralla tai avaamalla                      gallerian. Voin myös vaihtaa bion.
+
+
+Ilmoitusasetukset eivät enää kuulu sovelluksen ominaisuuksiin ajan puutteen vuoksi. Yllä mainittujen ilmiselvyyksien lisäksi yritetty myös tarkoitushakuisesti rikkoa käyttöliittymää useilla perättäisillä painalluksilla. Ajettu myös samoja merkkijonotestejä salasanan vaihto-ominaisuuteen, kuin rekisteröitymistestissä. Bion ylitys testattu, sekä reaktiot erikoismerkkeihin ja eri maiden kirjaimiin.
+
+#mdp
