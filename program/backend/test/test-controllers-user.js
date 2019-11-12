@@ -1,5 +1,5 @@
 'use strict';
-// User chai assertion library and make it use chai-http for requests
+// Import Chai assertion library & use Chai-http for requests
 let chai = require('chai');
 let assert = chai.assert;
 let expect = chai.expect;

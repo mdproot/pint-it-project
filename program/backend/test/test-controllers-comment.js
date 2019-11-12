@@ -1,4 +1,4 @@
-// User chai assertion library and make it use chai-http for requests
+// Import Chai assertion library & use Chai-http for requests
 let chai = require('chai');
 let assert = chai.assert;
 let expect = chai.expect;
@@ -24,10 +24,10 @@ let globalFakeCommentId = 0;
 
 /** NEEDS TO BE TESTED
  * 
- * Gets an amount of comments commented on a post
+ * Gets an amount of comments in a post
  * app.get('/comment/commentamount/:posts', Comment.getCommentAmount);
  * 
- * Gets 2 latest comments for each post in frontpage
+ * Gets two latest comments for each post on the frontpage
  * app.get('/comment/commentsfrontpage/:postId', Comment.getCommentsForFrontpage);
  * 
  * Gets newest comments when searched with a certain post ID
